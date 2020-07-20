@@ -61,7 +61,7 @@ def download_visual(r, path):
     block_size = 1024
     t = tqdm(
         total=total_size, unit='iB', bar_format='{l_bar}{bar:30}{r_bar}{bar:-30b}',
-        unit_scale=True, disable=total_size < 1024
+        unit_scale=True, disable=total_size < 512 * 1024
     )
     for chunk in r.iter_content(block_size):
         t.update(len(chunk))
