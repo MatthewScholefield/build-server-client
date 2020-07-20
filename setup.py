@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name='build-server-client',
-    version='0.1.0',
+    version='0.1.1',
     description='Python client for a simple build server',
     url='https://github.com/GIT_USER/build-server-client',
     author='Matthew D. Scholefield',
